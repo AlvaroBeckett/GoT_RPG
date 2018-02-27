@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <!-- <link rel="stylesheet" href="assets/css/reset.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Game of Thrones | RPG</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="col-12 text-center">
+            <img class="img-fluid" src="assets/images/got.png" alt="header">
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12" id="row1">
+                <div class="row justify-content-center">
+                    <h2 id="pick">Pick Your Character</h2>
+                </div>
+                <div class="row justify-content-around">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 character pl-3 pr-3 text-center" id="jonSnow">
+                        <span id="j-health" class="text-center"></span>
+                        <img src="assets/images/jon_snow.gif" style="height: 200px; width: 300px;" alt="image">
+                        <p class="name">Jon Snow</p>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 character text-center" id="daenerysTargarian">
+                        <span id="d-health" class="text-center"></span>
+                        <img src="assets/images/daenerys.gif" style="height: 200px; width: 300px;" alt="image">
+                        <p class="name">Daenerys Targarian</p>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 character text-center" id="wunWun">
+                        <span id="w-health" class="text-center"></span>
+                        <img src="assets/images/wun_wun.gif" style="height: 200px; width: 300px;" alt="image">
+                        <p class="name">Wun Wun</p>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-6 character text-center" id="gregorClegane">
+                        <span id="g-health" class="text-center"></span>
+                        <img src="assets/images/sir_gregor.gif" style="height: 200px; width: 300px;" alt="image">
+                        <p class="name">Gregor 'The Mountain' Clegane</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 character">
+                <div class="row justify-content-center">
+                    <h2>Your Character</h2>
+                </div>
+                <div class="row text-center" id="pickedUser">
+                    <!-- Place for picked character -->
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                <div class="row justify-content-center">
+                    <a id="attackBtn"><img src="assets/images/attack.png" alt="attack" style="width: 100px; height:100px"></a>
+                    <!-- <button class="btn btn-info" id="attackBtn">Attack</button> -->
+                </div>
+                <div class="row justify-content-center" id="restart">
+                    <!-- Place for restart button -->
+                </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
+                <div class="row justify-content-center">
+                    <h2>Your Defender</h2>
+                </div>
+                <div class="row text-center" id="pickedOpponent">
+                    <!-- Place for picked defender -->
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <p id="attackInfo"></p>
+        </div>
+    </div>
+    <script src="assets/javascript/game.js"></script>
+</body>
+
+</html>
